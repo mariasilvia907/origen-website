@@ -3,6 +3,7 @@ const app = express();
 const path = require('path');
 const data = require('./utils/data')
 const title = 'Origen'
+const port = process.env.PORT || 3000;
 
 
 
@@ -48,7 +49,7 @@ app.get('/contacto', (req, res)=>{
     })
 })
 
-app.listen(3000, ()=>{
+app.listen(port, ()=>{
     console.log('Funcionando en el puerto 3000')
 })
 
